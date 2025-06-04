@@ -89,12 +89,9 @@ h2 {
 
 .is-active {
   display: block;
-  -webkit-animation-name: displayAnime;
-          animation-name: displayAnime;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-name: displayAnime;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
 }
 
 #vanta {
@@ -119,17 +116,7 @@ h2 {
 }
 
 .eachTextAnime.appeartext span {
-  -webkit-animation: text_anime_on 1s ease-out forwards;
-          animation: text_anime_on 1s ease-out forwards;
-}
-
-@-webkit-keyframes text_anime_on {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: text_anime_on 1s ease-out forwards;
 }
 
 @keyframes text_anime_on {
@@ -142,25 +129,9 @@ h2 {
 }
 /* skillsアニメーション */
 .blur {
-  -webkit-animation-name: blurAnime;
-          animation-name: blurAnime;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes blurAnime {
-  from {
-    filter: blur(10px);
-    transform: scale(1.02);
-    opacity: 0;
-  }
-  to {
-    filter: blur(0);
-    transform: scale(1);
-    opacity: 1;
-  }
+  animation-name: blurAnime;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes blurAnime {
@@ -180,14 +151,6 @@ h2 {
 }
 
 /* タブ切り替えアニメーション */
-@-webkit-keyframes displayAnime {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @keyframes displayAnime {
   from {
     opacity: 0;
@@ -220,20 +183,10 @@ h2 {
   margin: 200px auto;
   background-color: #fff;
   border-radius: 100%;
-  -webkit-animation: sk-scaleout 1s infinite ease-in-out;
-          animation: sk-scaleout 1s infinite ease-in-out;
+  animation: sk-scaleout 1s infinite ease-in-out;
 }
 
 /* ローディングアニメーション */
-@-webkit-keyframes sk-scaleout {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
-}
 @keyframes sk-scaleout {
   0% {
     transform: scale(0);
@@ -353,25 +306,8 @@ header label:hover::before {
   width: 1px;
   height: 30px;
   background: #3E4550;
-  -webkit-animation: pathmove 1.5s ease-in-out infinite;
-          animation: pathmove 1.5s ease-in-out infinite;
+  animation: pathmove 1.5s ease-in-out infinite;
   opacity: 0;
-}
-@-webkit-keyframes pathmove {
-  0% {
-    height: 0;
-    top: 0;
-    opacity: 0;
-  }
-  30% {
-    height: 30px;
-    opacity: 1;
-  }
-  100% {
-    height: 0;
-    top: 50px;
-    opacity: 0;
-  }
 }
 @keyframes pathmove {
   0% {
@@ -422,7 +358,7 @@ header label:hover::before {
 }
 
 #skill {
-  height: 800px;
+  height: 1000px;
   padding-bottom: 0 !important;
 }
 #skill .skill-items {
@@ -465,8 +401,7 @@ header label:hover::before {
   width: 1px;
   height: 30px;
   background: #3E4550;
-  -webkit-animation: pathmove 1.5s ease-in-out infinite;
-          animation: pathmove 1.5s ease-in-out infinite;
+  animation: pathmove 1.5s ease-in-out infinite;
   opacity: 0;
 }
 #skill .skill-items .skill-block .skill-text p {
@@ -491,7 +426,6 @@ header label:hover::before {
 }
 #works ul .works-index {
   position: absolute;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 50px;
@@ -511,14 +445,6 @@ header label:hover::before {
   display: block;
   border: 0.5px solid #0c1c24;
 }
-@-webkit-keyframes expandRight {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 95vw;
-  }
-}
 @keyframes expandRight {
   from {
     width: 100%;
@@ -528,8 +454,7 @@ header label:hover::before {
   }
 }
 #works ul .animate {
-  -webkit-animation: expandRight 3s forwards;
-          animation: expandRight 3s forwards;
+  animation: expandRight 3s forwards;
 }
 #works ul li {
   width: 40vw;
@@ -859,5 +784,4 @@ small {
     letter-spacing: 0.2em;
     position: relative;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
